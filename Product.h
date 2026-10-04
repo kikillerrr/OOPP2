@@ -35,6 +35,8 @@ public:
     bool restock(int amount);
     bool removeStock(int amount);
     bool changePrice(double newPrice);
+    
+    void printInfo() const;
  
     
 

@@ -1,4 +1,5 @@
 #include "Product.h"
+#include <iostream>
 
 Product::Product()
     : id(0),
@@ -11,7 +12,7 @@ Product::Product()
 
 Product::Product(int id, std::string name, double price,
                  int quantity, Category category)
-    : id(id),
+    : id(id >= 0 ? id : 0),
       name(name.empty() ? "No name" : name),
       price(price > 0 ? price : 1),
       quantity(quantity >= 0 ? quantity : 0),
@@ -78,4 +79,13 @@ bool Product::changePrice(double newPrice)
 
     price = newPrice;
     return true;
+}
+
+void Product::printInfo() const
+{
+    std::cout << "ID: " << id
+              << ", Name: " << name
+              << ", Price: " << price
+              << ", Quantity: " << quantity
+              << '\n';
 }
