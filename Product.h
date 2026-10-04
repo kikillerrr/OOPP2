@@ -7,6 +7,10 @@ class Category
 {
 private:
     std::string name;
+
+public:
+    Category();
+    Category(std::string name);
 };
 
 class Product

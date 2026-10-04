@@ -1,6 +1,17 @@
 #include "Product.h"
 #include <iostream>
 
+
+Category::Category()
+    : name("Other")
+{
+}
+
+Category::Category(std::string name)
+    : name(name.empty() ? "Other" : name)
+{
+}
+
 Product::Product()
     : id(0),
       name("No name"),
