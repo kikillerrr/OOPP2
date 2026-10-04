@@ -25,6 +25,7 @@ public:
             int quantity, Category category);
 
     Product(const Product& other);
+    ~Product();
 
     int getId() const;
     std::string getName() const;
@@ -35,8 +36,9 @@ public:
     bool restock(int amount);
     bool removeStock(int amount);
     bool changePrice(double newPrice);
-    
+
     void printInfo() const;
+     
  
     
 

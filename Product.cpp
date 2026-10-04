@@ -29,6 +29,11 @@ Product::Product(const Product& other)
 {
 }
 
+Product::~Product()
+{
+}
+
+
 int Product::getId() const
 {
     return id;
