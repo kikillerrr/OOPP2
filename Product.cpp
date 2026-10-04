@@ -12,9 +12,9 @@ Product::Product()
 Product::Product(int id, std::string name, double price,
                  int quantity, Category category)
     : id(id),
-      name(name),
-      price(price),
-      quantity(quantity),
+      name(name.empty() ? "No name" : name),
+      price(price > 0 ? price : 1),
+      quantity(quantity >= 0 ? quantity : 0),
       category(category)
 {
 }
