@@ -1,6 +1,7 @@
 #include "Product.h"
 #include <iostream>
 
+int Product::objectCount = 0;
 
 Category::Category()
     : name("Other")
@@ -19,6 +20,7 @@ Product::Product()
       quantity(0),
       category()
 {
+    objectCount++;
 }
 
 Product::Product(int id, std::string name, double price,
@@ -29,6 +31,7 @@ Product::Product(int id, std::string name, double price,
       quantity(quantity >= 0 ? quantity : 0),
       category(category)
 {
+    objectCount++;
 }
 
 Product::Product(const Product& other)
@@ -38,10 +41,12 @@ Product::Product(const Product& other)
       quantity(other.quantity),
       category(other.category)
 {
+    objectCount++;
 }
 
 Product::~Product()
 {
+    objectCount--;
 }
 
 
@@ -104,4 +109,9 @@ void Product::printInfo() const
               << ", Price: " << price
               << ", Quantity: " << quantity
               << '\n';
+}
+
+int Product::getObjectCount()
+{
+    return objectCount;
 }

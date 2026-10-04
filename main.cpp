@@ -11,6 +11,9 @@ int main()
 
     Product p3(p2);
 
+    std::cout << "Objects: "
+          << Product::getObjectCount() << '\n';
+
 
     p1.restock(20);
 

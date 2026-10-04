@@ -22,6 +22,8 @@ private:
     int quantity;
     Category category;
 
+    static int objectCount;
+
 public:
     Product();
 
@@ -42,11 +44,10 @@ public:
     bool changePrice(double newPrice);
 
     void printInfo() const;
-     
- 
-    
 
-    
+    static int getObjectCount();
+     
+         
 };
 
 #endif
