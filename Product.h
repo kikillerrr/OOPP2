@@ -32,6 +32,12 @@ public:
     int getQuantity() const;
     Category getCategory() const;
 
+    bool restock(int amount);
+    bool removeStock(int amount);
+    bool changePrice(double newPrice);
+ 
+    
+
     
 };
 

@@ -52,3 +52,30 @@ Category Product::getCategory() const
 {
     return category;
 }
+
+bool Product::restock(int amount)
+{
+    if (amount <= 0)
+        return false;
+
+    quantity += amount;
+    return true;
+}
+
+bool Product::removeStock(int amount)
+{
+    if (amount <= 0 || amount > quantity)
+        return false;
+
+    quantity -= amount;
+    return true;
+}
+
+bool Product::changePrice(double newPrice)
+{
+    if (newPrice <= 0)
+        return false;
+
+    price = newPrice;
+    return true;
+}
