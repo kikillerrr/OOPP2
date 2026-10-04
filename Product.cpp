@@ -27,3 +27,28 @@ Product::Product(const Product& other)
       category(other.category)
 {
 }
+
+int Product::getId() const
+{
+    return id;
+}
+
+std::string Product::getName() const
+{
+    return name;
+}
+
+double Product::getPrice() const
+{
+    return price;
+}
+
+int Product::getQuantity() const
+{
+    return quantity;
+}
+
+Category Product::getCategory() const
+{
+    return category;
+}
