@@ -1,0 +1,12 @@
+git add lab_4.cpp
+git commit -m "Первый коммит"
+git push -u origin main
+
+g++ lab_1.cpp -o main
+./main
+
+git log
+
+doxygen -g
+doxygen
+start .\docs\html\index.html
