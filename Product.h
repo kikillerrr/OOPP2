@@ -1,3 +1,8 @@
+#ifndef PRODUCT_H
+#define PRODUCT_H
+
+#include <string>
+
 class Category
 {
 private:
@@ -7,9 +12,11 @@ private:
 class Product
 {
 private:
-    int id;                 
-    std::string name;     
-    double price;           
-    int quantity;           
-    Category category;      
+    int id;
+    std::string name;
+    double price;
+    int quantity;
+    Category category;
 };
+
+#endif
