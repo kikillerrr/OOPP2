@@ -17,6 +17,15 @@ private:
     double price;
     int quantity;
     Category category;
+
+public:
+    Product();
+
+    int getId() const;
+    std::string getName() const;
+    double getPrice() const;
+    int getQuantity() const;
+    Category getCategory() const;
 };
 
 #endif
