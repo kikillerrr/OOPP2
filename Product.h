@@ -21,6 +21,9 @@ private:
 public:
     Product();
 
+    Product(int id, std::string name, double price,
+            int quantity, Category category);
+
     int getId() const;
     std::string getName() const;
     double getPrice() const;
