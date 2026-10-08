@@ -4,12 +4,24 @@
 
 int Product::objectCount = 0;
 
-Category::Category() : name("Other") {}
+Category::Category()
+    : id(0), name("Other") {}
 
 Category::Category(std::string name)
-    : name(name.empty() ? "Other" : name) {}
+    : id(0),
+      name(name.empty() ? "Other" : name) {}
 
-std::string Category::getName() const { return name; }
+Category::Category(int id, std::string name)
+    : id(id > 0 ? id : 0),
+      name(name.empty() ? "Other" : name) {}
+
+int Category::getId() const {
+    return id;
+}
+
+std::string Category::getName() const {
+    return name;
+}
 
 Product::Product()
     : id(0), name("Без названия"), price(1), quantity(0), category() {

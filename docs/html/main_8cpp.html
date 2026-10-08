@@ -112,6 +112,243 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp.html
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_product_8h_source.html">Product.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a463abe7d682b6ef6fc100e18d872d4e7" id="r_a463abe7d682b6ef6fc100e18d872d4e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a463abe7d682b6ef6fc100e18d872d4e7">printHeader</a> ()</td></tr>
+<tr class="memdesc:a463abe7d682b6ef6fc100e18d872d4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит заголовок таблицы товаров.  <br /></td></tr>
+<tr class="memitem:a2de33b4506222906bd448216afc7a2ec" id="r_a2de33b4506222906bd448216afc7a2ec"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2de33b4506222906bd448216afc7a2ec">readInt</a> (std::string m)</td></tr>
+<tr class="memdesc:a2de33b4506222906bd448216afc7a2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает целое число с клавиатуры.  <br /></td></tr>
+<tr class="memitem:a86cc9d3ff88e979a48e92b93eb19f6b2" id="r_a86cc9d3ff88e979a48e92b93eb19f6b2"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a86cc9d3ff88e979a48e92b93eb19f6b2">readDouble</a> (std::string m)</td></tr>
+<tr class="memdesc:a86cc9d3ff88e979a48e92b93eb19f6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает вещественное число с клавиатуры.  <br /></td></tr>
+<tr class="memitem:a512e66ef4f2dfbab9a6bfa83d8d6ab35" id="r_a512e66ef4f2dfbab9a6bfa83d8d6ab35"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a512e66ef4f2dfbab9a6bfa83d8d6ab35">readText</a> (std::string m)</td></tr>
+<tr class="memdesc:a512e66ef4f2dfbab9a6bfa83d8d6ab35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает непустую строку с клавиатуры.  <br /></td></tr>
+<tr class="memitem:a300ce43276323e57f20f4a4bce2e6bfb" id="r_a300ce43276323e57f20f4a4bce2e6bfb"><td class="memItemLeft"><a class="el" href="class_product.html">Product</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a300ce43276323e57f20f4a4bce2e6bfb">find</a> (std::vector&lt; <a class="el" href="class_product.html">Product</a> &gt; &amp;p, int id)</td></tr>
+<tr class="memdesc:a300ce43276323e57f20f4a4bce2e6bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ищет товар по идентификатору.  <br /></td></tr>
+<tr class="memitem:a7feff0b2257d76f2fb475cbe670a0470" id="r_a7feff0b2257d76f2fb475cbe670a0470"><td class="memItemLeft"><a class="el" href="class_category.html">Category</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7feff0b2257d76f2fb475cbe670a0470">getCategory</a> (std::vector&lt; <a class="el" href="class_category.html">Category</a> &gt; &amp;c)</td></tr>
+<tr class="memdesc:a7feff0b2257d76f2fb475cbe670a0470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Позволяет выбрать существующую категорию или создать новую.  <br /></td></tr>
+<tr class="memitem:a26ce78f6b74068b2ba2687541d877c7f" id="r_a26ce78f6b74068b2ba2687541d877c7f"><td class="memItemLeft"><a class="el" href="class_product.html">Product</a>&#160;</td><td class="memItemRight"><a class="el" href="#a26ce78f6b74068b2ba2687541d877c7f">create</a> (std::vector&lt; <a class="el" href="class_product.html">Product</a> &gt; &amp;p, std::vector&lt; <a class="el" href="class_category.html">Category</a> &gt; &amp;c)</td></tr>
+<tr class="memdesc:a26ce78f6b74068b2ba2687541d877c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт новый товар.  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы.  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a26ce78f6b74068b2ba2687541d877c7f" name="a26ce78f6b74068b2ba2687541d877c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ce78f6b74068b2ba2687541d877c7f">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_product.html">Product</a> create </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_product.html">Product</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_category.html">Category</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт новый товар. </p>
+<p>Проверяет уникальность идентификатора, корректность цены и количества товара.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Список существующих товаров. </td></tr>
+    <tr><td class="paramname">c</td><td>Список категорий. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Созданный объект <a class="el" href="class_product.html" title="Представляет товар на складе.">Product</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a300ce43276323e57f20f4a4bce2e6bfb" name="a300ce43276323e57f20f4a4bce2e6bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300ce43276323e57f20f4a4bce2e6bfb">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_product.html">Product</a> * find </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_product.html">Product</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ищет товар по идентификатору. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Список товаров. </td></tr>
+    <tr><td class="paramname">id</td><td>Идентификатор товара. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Указатель на найденный товар или nullptr, если товар не найден. </dd></dl>
+
+</div>
+</div>
+<a id="a7feff0b2257d76f2fb475cbe670a0470" name="a7feff0b2257d76f2fb475cbe670a0470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7feff0b2257d76f2fb475cbe670a0470">&#9670;&#160;</a></span>getCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_category.html">Category</a> getCategory </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_category.html">Category</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Позволяет выбрать существующую категорию или создать новую. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Список категорий. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Выбранная или созданная категория. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы. </p>
+<p>Инициализирует категории и товары, демонстрирует основные операции с классом <a class="el" href="class_product.html" title="Представляет товар на складе.">Product</a> и запускает интерактивное меню управления товарами.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 при успешном завершении программы. </dd></dl>
+
+</div>
+</div>
+<a id="a463abe7d682b6ef6fc100e18d872d4e7" name="a463abe7d682b6ef6fc100e18d872d4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463abe7d682b6ef6fc100e18d872d4e7">&#9670;&#160;</a></span>printHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printHeader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит заголовок таблицы товаров. </p>
+
+</div>
+</div>
+<a id="a86cc9d3ff88e979a48e92b93eb19f6b2" name="a86cc9d3ff88e979a48e92b93eb19f6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cc9d3ff88e979a48e92b93eb19f6b2">&#9670;&#160;</a></span>readDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double readDouble </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считывает вещественное число с клавиатуры. </p>
+<p>Поддерживает ввод как с точкой, так и с запятой в качестве десятичного разделителя.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Сообщение для пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Введённое вещественное число. </dd></dl>
+
+</div>
+</div>
+<a id="a2de33b4506222906bd448216afc7a2ec" name="a2de33b4506222906bd448216afc7a2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de33b4506222906bd448216afc7a2ec">&#9670;&#160;</a></span>readInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int readInt </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считывает целое число с клавиатуры. </p>
+<p>Повторяет ввод до тех пор, пока пользователь не введёт корректное целое число.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Сообщение для пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Введённое целое число. </dd></dl>
+
+</div>
+</div>
+<a id="a512e66ef4f2dfbab9a6bfa83d8d6ab35" name="a512e66ef4f2dfbab9a6bfa83d8d6ab35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512e66ef4f2dfbab9a6bfa83d8d6ab35">&#9670;&#160;</a></span>readText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string readText </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считывает непустую строку с клавиатуры. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Сообщение для пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Введённая строка. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

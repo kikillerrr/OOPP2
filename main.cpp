@@ -1,8 +1,6 @@
 #include <iostream>
-#include <string>
 #include <sstream>
 #include <vector>
-#include <iomanip>
 #include <windows.h>
 #include "Product.h"
 
@@ -119,9 +117,10 @@ Category getCategory(std::vector<Category>& c) {
     while (true) {
         std::cout << "\nКатегории:\n";
 
-        for (int i = 0; i < c.size(); i++)
+        for (std::size_t i = 0; i < c.size(); i++)
             std::cout << i + 1 << ". "
-                      << c[i].getName() << '\n';
+             << "ID: " << c[i].getId()
+             << ", " << c[i].getName() << '\n';
 
         std::cout << "0. Новая категория\n";
 
@@ -136,13 +135,20 @@ Category getCategory(std::vector<Category>& c) {
                     exists = true;
 
             if (!exists) {
-                c.emplace_back(name);
-                return c.back();
+            int newId = 1;
+
+            for (const auto& x : c)
+                if (x.getId() >= newId)
+                    newId = x.getId() + 1;
+
+            c.emplace_back(newId, name);
+            return c.back();
             }
 
             std::cout << "Такая категория уже есть.\n";
         }
-        else if (n >= 1 && n <= c.size())
+        else if (n >= 1 &&
+         n <= static_cast<int>(c.size()))
             return c[n - 1];
     }
 }
@@ -205,8 +211,8 @@ int main() {
     SetConsoleCP(65001);
 
     std::vector<Category> c = {
-        Category("Игрушки"),
-        Category("Мебель")
+    Category(1, "Игрушки"),
+    Category(2, "Мебель")
     };
 
     std::vector<Product> p = {

@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "main.cpp", "main_8cpp.html", null ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "Product.cpp", "_product_8cpp.html", null ],
-    [ "Product.h", "_product_8h.html", null ]
+    [ "Product.h", "_product_8h.html", "_product_8h" ]
 ];
