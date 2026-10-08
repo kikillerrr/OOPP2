@@ -1,0 +1,41 @@
+@startuml
+
+title Диаграмма классов системы управления товарами
+
+class Category {
+    - name : std::string
+    --
+    + Category()
+    + Category(name : std::string)
+    + getName() : std::string
+}
+
+class Product {
+    - id : int
+    - name : std::string
+    - price : double
+    - quantity : int
+    - category : Category
+    - {static} objectCount : int
+    --
+    + Product()
+    + Product(id : int, name : std::string, price : double, quantity : int, category : Category)
+    + Product(other : Product)
+    + ~Product()
+    --
+    + getId() : int
+    + getName() : std::string
+    + getPrice() : double
+    + getQuantity() : int
+    + getCategory() : Category
+    --
+    + restock(amount : int) : bool
+    + removeStock(amount : int) : bool
+    + changePrice(newPrice : double) : bool
+    + printInfo() : void
+    + {static} getObjectCount() : int
+}
+
+Product *-- Category : содержит
+
+@enduml
